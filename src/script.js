@@ -21,4 +21,16 @@ openModalBtns.forEach(btn => {
 closeModalBtn.addEventListener('click', () => {
   modal.classList.add('hidden');
   modal.classList.remove('flex');
-});
+}); 
+
+// Countdown Timer Logic
+function startCountdown() {
+  let seconds = 60;
+  setInterval(() => {
+    seconds--;
+    if (seconds < 0) seconds = 59;
+    document.getElementById('seconds').textContent = seconds < 10 ? '0' + seconds : seconds;
+  }, 1000);
+}
+
+startCountdown();
