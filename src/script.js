@@ -4,4 +4,21 @@ const mobileMenu = document.getElementById('mobile-menu');
 
 menuBtn.addEventListener('click', () => {
   mobileMenu.classList.toggle('hidden');
+}); 
+
+// Modal Functionality
+const modal = document.getElementById('fruit-modal');
+const openModalBtns = document.querySelectorAll('.open-modal-btn');
+const closeModalBtn = document.getElementById('close-modal-btn');
+
+openModalBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+  });
+});
+
+closeModalBtn.addEventListener('click', () => {
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
 });
