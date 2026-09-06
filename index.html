@@ -8,6 +8,36 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="font-sans antialiased bg-gray-50 text-gray-800">
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
+  <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+    <div class="flex items-center gap-2">
+      <span class="text-3xl">🍓</span>
+      <span class="text-2xl font-bold text-emerald-600">FruitBurst</span>
+    </div>
+
+    <ul class="hidden md:flex gap-8 font-medium text-gray-600">
+      <li><a href="#home" class="hover:text-emerald-600 transition">Home</a></li>
+      <li><a href="#about" class="hover:text-emerald-600 transition">About Us</a></li>
+      <li><a href="#shop" class="hover:text-emerald-600 transition">Shop</a></li>
+      <li><a href="#all-fruits" class="hover:text-emerald-600 transition">All Fruits</a></li>
+    </ul>
+
+    <button class="hidden md:block bg-emerald-500 hover:bg-emerald-600 text-white px-5 py-2 rounded-full font-semibold transition">
+      Buy Now
+    </button>
+
+    <button id="menu-btn" class="md:hidden text-2xl text-gray-700">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+  </nav>
+
+  <div id="mobile-menu" class="hidden md:hidden bg-white px-4 pt-2 pb-4 border-b">
+    <a href="#home" class="block py-2 text-gray-600 hover:text-emerald-600">Home</a>
+    <a href="#about" class="block py-2 text-gray-600 hover:text-emerald-600">About Us</a>
+    <a href="#shop" class="block py-2 text-gray-600 hover:text-emerald-600">Shop</a>
+    <a href="#all-fruits" class="block py-2 text-gray-600 hover:text-emerald-600">All Fruits</a>
+  </div>
+</header>
 
   <script src="src/script.js"></script>
 </body>
